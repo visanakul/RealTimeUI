@@ -1,0 +1,98 @@
+<html>
+
+<head>
+    <title>Position</title>
+</head>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+    }
+    header{
+        margin: 0;
+        padding: 0;
+    }
+
+    ul {
+        display: flex;
+        justify-content: space-evenly;
+        width: 80%;
+        padding: 10px 20px;
+        margin: auto;
+    }
+
+    li {
+        display: inline;
+        padding: 5px 10px;
+        color: white;
+        list-style: none;
+    }
+
+    main {
+        height: 1000px;
+    }
+
+    nav {
+        width: 100%;
+        position: sticky;
+        top:0;
+        background-color: black;
+    }
+    h1{
+        text-align: center;
+        padding: 10px 30px;
+        background-color: burlywood;
+        margin: 0;
+    }
+    footer{
+        background-color: black;
+        width: 100%;
+        position: fixed;
+        bottom: 0;
+        padding: 10px 20px;
+        margin: auto;
+        text-align: center;
+        color: white;
+    }
+    main{
+        display: flex;
+    }
+    .left-child,.right-child{
+        width: 20%;
+        background-color: antiquewhite;
+    }
+    .left-child{
+        float:left;
+    }
+    .center-child{
+        width: 80%;
+        float: right;
+        background-color: turquoise;
+    }
+    .right-child{
+        float: right;
+    }
+</style>
+
+<body>
+    <header>
+<h1>Welcome</h1>
+    </header>
+    <nav>
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Products</li>
+            <li>Services</li>
+            <li>Contact</li>
+        </ul>
+    </nav>
+    <main>
+        <div class="left-child"></div>
+        <div class="center-child"></div>
+        <div class="right-child"></div>
+    </main>
+    <footer>Copyright &copy 2019</footer>
+</body>
+
+</html>
