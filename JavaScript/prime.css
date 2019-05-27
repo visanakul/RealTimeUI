@@ -1,0 +1,38 @@
+h1{
+    text-align: center;
+}
+.container{
+    font-size: 1.25rem;
+    margin:auto;
+    padding: 20px;
+    margin-top: 50px;
+   /* border: 2px solid rgb(10, 6, 6);*/
+    width: 50%;
+    /*background-color: rgb(245, 195, 129);*/
+}
+.control-group{
+    display: flex;
+    justify-content: center;
+    padding: 10px 20px;
+    width: 100%;
+}
+.left-child{
+    margin-right: 5px;
+    text-align: right;
+    width: 40%;
+    float:left;
+  
+}
+.right-child{
+    margin-left: 5px;
+    width: 40%;
+    float:right;
+  
+}
+.center-child{
+    padding:5px;
+    background-color: black;
+    color: white;
+   display: block;
+   align-self: center;
+}

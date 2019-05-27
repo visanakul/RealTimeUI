@@ -1,0 +1,33 @@
+<html>
+
+<head>
+    <title>Addition</title>
+</head>
+<script src="angular.min.js"></script>
+
+<body ng-app="addApp">
+    <div ng-controller="addController">
+        <div ng-init="num1='0';num2='0'"></div>
+        <p>
+            Number1 <input ng-model="num1" ng-change="findAdd()" />
+        </p>
+        <p>
+            Number2 <input ng-model="num2" ng-change="findAdd()"/>
+        </p>
+       
+        <div  ng-bind="res"></div>
+    </div>
+    <script>
+        var app = angular.module('addApp', []);
+        app.controller('addController', function ($scope) {
+            $scope.findAdd = function () {
+                //debugger;
+                console.log('Numer1 : '+$scope.num1+'   Numer2 : '+$scope.num2);
+                var sum = Number($scope.num1) + Number($scope.num2);
+                $scope.res = 'Addition is : ' + sum;
+            }
+        });
+    </script>
+</body>
+
+</html>
